@@ -4,6 +4,7 @@ Functions to draw the results of the solver.
 """
 
 import matplotlib.pyplot as plt
+plt.rcParams["font.size"] = 13
 
 
 def plot_states(x, V, E, psi, title, filename=None, walls=False, n_start=0):
@@ -11,7 +12,7 @@ def plot_states(x, V, E, psi, title, filename=None, walls=False, n_start=0):
     walls=True draws hard walls at both ends (for the box).
     n_start is the number of the first state (0 for most potentials, 1 for the box)."""
     scale = 0.4 * (E[-1] - E[0]) / len(E)        # height of each wavefunction drawing
-    plt.figure(figsize=(8, 5))
+    plt.figure(figsize=(7, 4.5))
     plt.plot(x, V, color="black", linewidth=2, label="V(x)")
     if walls:
         plt.axvline(x[0], color="black", linewidth=2)     # left wall
