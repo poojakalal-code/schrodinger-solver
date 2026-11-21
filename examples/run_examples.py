@@ -27,7 +27,7 @@ E_exact = n**2 * np.pi**2 / 2
 print("Particle in a box")
 print("  numerical:", E)
 print("  exact:    ", E_exact)
-plot_states(x, box(x), E, psi, "Particle in a box", "figures/box.png")
+plot_states(x, box(x), E, psi, "Particle in a box", "figures/box.png", walls=True, n_start=1)
 
 
 # 2. Harmonic oscillator

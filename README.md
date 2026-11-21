@@ -9,7 +9,7 @@ In quantum mechanics, a particle in a potential V(x) can only have certain energ
 These energies and the wavefunctions come from the Schrödinger equation
 (units: ħ = m = 1):
 
-$$-\frac{1}{2}\frac{d^2\psi}{dx^2} + V(x)\,\psi = E\,\psi$$
+-\frac{1}{2}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
 
 Only a few potentials (box, harmonic oscillator) can be solved exactly by hand.
 For realistic potentials, like a finite well or a double well, we need a numerical method.

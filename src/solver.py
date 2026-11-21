@@ -38,4 +38,8 @@ def solve(V_func, x_min, x_max, N=1000, n_states=5):
     E = E[:n_states]               # keep only the lowest few
     psi = psi[:, :n_states]
     psi = psi / np.sqrt(dx)        # normalize: sum of |psi|^2 * dx = 1
+    for k in range(n_states):      # make every wave start upwards (psi and -psi are the same state)
+        first = np.argmax(abs(psi[:, k]) > 0.01 * max(abs(psi[:, k])))
+        if psi[first, k] < 0:
+            psi[:, k] = -psi[:, k]
     return x, E, psi
