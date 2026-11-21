@@ -123,7 +123,6 @@ python -m pytest -v
 ## Dependencies
 
 - numpy
-- scipy
 - matplotlib
 - pytest
 
